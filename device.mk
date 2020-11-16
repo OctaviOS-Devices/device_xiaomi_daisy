@@ -98,6 +98,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
+    audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudioroute \
