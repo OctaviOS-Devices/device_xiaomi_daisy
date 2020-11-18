@@ -10,7 +10,6 @@ dalvik.vm.image-dex2oat-filter=speed
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 af.fast_track_multiplier=2 \
-audio.deep_buffer.media=true \
 audio.offload.disable=true \
 audio.offload.min.duration.secs=30 \
 audio.offload.video=true \
@@ -61,6 +60,10 @@ ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
 ro.vendor.qti.sys.fw.use_trim_settings=true \
 vendor.vidc.enc.disable.pq=true
+
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.kernel.ebpf.supported=true
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -162,15 +165,10 @@ persist.loc.nlp_name=com.qualcomm.location \
 ro.gps.agps_provider=1 \
 ro.ril.def.agps.mode=1
 
-# Phase offsets
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-debug.sf.use_phase_offsets_as_durations=1 \
-debug.sf.late.sf.duration=10500000 \
-debug.sf.late.app.duration=20500000 \
-debug.sf.early.sf.duration=21000000 \
-debug.sf.early.app.duration=16500000 \
-debug.sf.earlyGl.sf.duration=13500000 \
-debug.sf.earlyGl.app.duration=21000000
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hardware.egl=adreno \
+ro.hardware.vulkan=adreno
 
 # LMKD
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -195,6 +193,7 @@ media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
 vendor.mm.enable.qcom_parser=1048575 \
 mm.enable.smoothstreaming=true \
+mm.enable.sec.smoothstreaming=true \
 mmp.enable.3g2=true \
 vendor.audio.hw.aac.encoder=true \
 vendor.vidc.dec.downscalar_height=1088 \
@@ -251,6 +250,7 @@ persist.radio.multisim.config=dsds \
 persist.radio.VT_ENABLE=1 \
 persist.radio.volte.dan_support=true \
 persist.sys.cust.lte_config=true \
+persist.vendor.radio.add_power_save=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
@@ -274,6 +274,8 @@ persist.vendor.cne.logging.qxdm=3974
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000 \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096
 
