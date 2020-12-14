@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common DerpFest Rom stuff.
+# Inherit some common OctaviOS Rom stuff.
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Bootanimation
@@ -35,7 +35,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Adding OctaviOS stuff
 OCTAVI_BUILD_TYPE=Official
-TARGET_USES_BLUR=true
+#TARGET_USES_BLUR=true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
