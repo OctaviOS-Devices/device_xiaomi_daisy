@@ -420,7 +420,8 @@ PRODUCT_PACKAGES += \
     move_time_data.sh \
     move_wifi_data.sh \
     init.camera.rc \
-    init.camera.sh
+    init.camera.sh \
+    init.safailnet.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
