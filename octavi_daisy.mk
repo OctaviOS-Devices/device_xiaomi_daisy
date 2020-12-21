@@ -35,6 +35,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Adding OctaviOS stuff
 OCTAVI_BUILD_TYPE=Official
+OCTAVI_DEVICE_MAINTAINER := GitDaisy
 #TARGET_USES_BLUR=true
 
 # Device identifier. This must come after all inclusions
