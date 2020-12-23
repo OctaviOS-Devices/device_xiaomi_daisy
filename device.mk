@@ -223,8 +223,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.vendor \
-    vendor.display.config@1.9 \
-    vendor.display.config@1.9_vendor
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0_vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
