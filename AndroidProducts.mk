@@ -15,9 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_daisy.mk
+    $(LOCAL_DIR)/octavi_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_daisy-user \
-    derp_daisy-userdebug \
-    derp_daisy-eng
+    octavi_daisy-user \
+    octavi_daisy-userdebug \
+    octavi_daisy-eng

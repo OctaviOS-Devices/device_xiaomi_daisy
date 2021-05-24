@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
 # Inherit some common DerpFest Rom stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Inherit some VendorExtra stuff
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
@@ -37,15 +37,13 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
-# Adding Derp stuffs
-IS_PHONE := true
-
 # Official-ify
-DERP_BUILDTYPE := Official
+OCTAVI_BUILD_TYPE=Official
+OCTAVI_DEVICE_MAINTAINER := GitDaisy
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := derp_daisy
+PRODUCT_NAME := octavi_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
