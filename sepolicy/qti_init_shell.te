@@ -9,10 +9,10 @@ allow qti_init_shell vfat:file { getattr };
 allow qti_init_shell vfat:dir { open };
 allow qti_init_shell vfat:file { read };
 allow qti_init_shell vfat:file { open };
-allow qti_init_shell qti_init_shell:capability { kill };
+allow qti_init_shell qti_init_shell:capability { kill dac_override };
 
 r_dir_file(qti_init_shell, vfat)
-allow qti_init_shell system_data_file:dir { write };
+allow qti_init_shell system_data_file:dir { write unlink };
 allow qti_init_shell system_data_file:dir { getattr };
 allow qti_init_shell system_data_file:dir { read };
 allow qti_init_shell system_data_file:dir { open };

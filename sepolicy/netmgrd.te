@@ -1,2 +1,4 @@
 set_prop(netmgrd, vendor_xlat_prop)
 allow netmgrd netmgrd:capability { sys_admin };
+allow netmgrd vendor_radio_prop:property_service { set };
+
