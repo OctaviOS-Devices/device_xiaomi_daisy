@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+    <!--whether support record location in camera-->
+    <bool name="support_camera_record_location">true</bool>
+    <!--whether support time watermark in camera-->
+    <bool name="support_camera_water_mark">true</bool>
+    <!--whether support new style time watermark in camera-->
+    <bool name="support_camera_new_style_time_water_mark">true</bool>
+    <!--whether support square mode in camera-->
+    <bool name="support_camera_square_mode">true</bool>
+    <!--whether support pause recording in camera-->
+    <bool name="support_camera_video_pause">true</bool>
+    <!--whether support boosting screen brightness in camera-->
+    <bool name="support_camera_boost_brightness">true</bool>
+    <!--whether taking lower size panorama in camera-->
+    <bool name="is_lower_size_panorama">true</bool>
+    <!--whether support full size panorama in camera-->
+    <bool name="support_full_size_panorama">true</bool>
+    <!--whether taking lower size effect image in camera-->
+    <bool name="is_lower_size_effect">false</bool>
+    <!--whether taking full size effect image in camera-->
+    <bool name="is_full_size_effect">false</bool>
+    <!--whether support 4k recording in camera-->
+    <bool name="support_camera_4k_quality">true</bool>
+    <!--whether use morpho lib in camera-->
+    <bool name="is_camera_use_morpho_lib">true</bool>
+    <!--whether replace a lower cost effect to avoid preview lag-->
+    <bool name="is_camera_replace_higher_cost_effect">false</bool>
+    <!--whether support manual focus/exposure_time in camera-->
+    <bool name="support_camera_manual_function">true</bool>
+    <bool name="support_camera_manual_function_focus">true</bool>
+    <bool name="support_camera_manual_function_et">true</bool>
+    <!--whether capture when user press down the shutter in camera instead of left the shutter-->
+    <bool name="support_camera_press_down_capture">true</bool>
+    <!--whether support capture in torch mode in camera-->
+    <bool name="support_camera_torch_capture">true</bool>
+    <!--whether freeze preview after hdr capture in camera-->
+    <bool name="is_camera_freeze_after_hdr_capture">false</bool>
+    <!--whether set orientation info for face detection in camera-->
+    <bool name="is_camera_face_detection_need_orientation">true</bool>
+    <!--whether hold blured background for effects preview in camera-->
+    <bool name="is_camera_hold_blur_background">true</bool>
+    <!--whether support peaking mf in camera-->
+    <bool name="support_camera_peaking_mf">true</bool>
+    <!--whether support gradienter in camera-->
+    <bool name="support_camera_gradienter">true</bool>
+    <!--whether scan qrcode with lower frequency in camera-->
+    <bool name="is_camera_lower_qrscan_frequency">true</bool>
+    <!--whether listen frame with single subthread looper in camera-->
+    <bool name="is_camera_preview_with_subthread_looper">true</bool>
+    <!--whether add watermark in camera app-->
+    <bool name="is_camera_app_water_mark">true</bool>
+    <!--whether support tiltshift  in camera-->
+    <bool name="support_camera_tilt_shift">true</bool>
+    <!--whether support magic mirror in camera-->
+    <bool name="support_camera_magic_mirror">false</bool>
+    <!-- whether this device is Android one -->
+    <bool name="is_android_one_device">true</bool>
+    <!--whether front camera support hdr or not-->
+    <bool name="support_front_hdr">true</bool>
+    <!-- Camera HDR default value -->
+    <integer name="support_camera_hdr_default_value">3</integer>
+    <integer name="support_camera_front_hdr_default_value">1</integer>
+ </features>
