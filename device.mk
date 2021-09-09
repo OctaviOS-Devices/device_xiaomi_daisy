@@ -211,18 +211,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-    libdisplayconfig.vendor \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.system \
-    libdisplayconfig.qti.vendor \
-    libqdMetaData \
-    libqdMetaData.vendor \
-    libqdMetaData.system \
     libgenlock \
     libtinyxml \
     libvulkan \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor
+    vendor.display.config@1.0.vendor
 
 # Dex
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
@@ -515,15 +507,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libnl \
-    libwfdaac
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Don't build debug for host or device
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
