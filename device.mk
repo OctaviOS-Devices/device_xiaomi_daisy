@@ -362,7 +362,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.qcom \
     android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service
+    android.hardware.power@1.0-service \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
