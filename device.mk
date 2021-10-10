@@ -408,9 +408,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
+
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0 \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
@@ -532,3 +544,8 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor
+
