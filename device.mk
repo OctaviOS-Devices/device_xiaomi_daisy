@@ -214,6 +214,7 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     libvulkan \
+    libtinyxml.vendor \
     vendor.display.config@1.0.vendor
 
 # Dex
