@@ -528,3 +528,7 @@ USE_DEX2OAT_DEBUG := false
 # Updater app [POSP Specific]
 PRODUCT_PACKAGES += \
     Updater
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor
