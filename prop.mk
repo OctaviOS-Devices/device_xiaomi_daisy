@@ -292,3 +292,7 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 # Updater app [POSP Specific]
 PRODUCT_PROPERTY_OVERRIDES += \
 potato.updater.uri=https://raw.githubusercontent.com/LinkBoi00-Development/otaupdater/master/1.json
+
+# Recovery
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
