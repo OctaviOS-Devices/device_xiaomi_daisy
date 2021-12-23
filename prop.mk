@@ -296,3 +296,5 @@ potato.updater.uri=https://raw.githubusercontent.com/LinkBoi00-Development/otaup
 # Recovery
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.octavi.maintainer=GitDaisy
