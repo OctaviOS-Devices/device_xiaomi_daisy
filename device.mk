@@ -34,7 +34,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8953
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-daisy
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996
+
+# HALS
+    PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
+    PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
+    PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
