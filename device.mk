@@ -550,8 +550,7 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor
-# Crypto
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.keymaster@3.0.vendor
 
+# GAPPS
+PRODUCT_PACKAGES += \
+    GAPPSDebloat
